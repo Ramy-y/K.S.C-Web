@@ -1,10 +1,19 @@
+@font-face {
+    font-family: 'nanumgothiccodingregular';
+    src: url('nanumgothiccoding-regular-webfont.woff2') format('woff2'),
+         url('nanumgothiccoding-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
     margin: 0;
-    height: 200vh;
+    height: 400vh;
 }
 
 ul {
@@ -33,6 +42,7 @@ a:hover, a:visited, a {
     justify-content: center;
     align-items: center;
     border-bottom: 10px ridge royalblue;
+    
 }
 
 .pride__con {
@@ -43,6 +53,40 @@ a:hover, a:visited, a {
     cursor: pointer;
 } 
 
+.director {
+    height: 50px;
+    width: 50px;
+    transform: translateY(190px);
+    fill: #bfbbd0;
+}
+
+@media screen and (max-width: 764px) {
+    .director {
+        transform: translateY(160px);
+    }
+    
+}
+
+@media screen and (max-width: 697px) {
+    .director {
+        transform: translateY(245px);
+    }
+    
+}
+
+@media screen and (max-width: 483px) {
+    .director {
+        transform: translateY(220px);
+    }
+    
+}
+
+.director:hover {
+    fill: #fff;
+    transition: fill 1s;
+}
+
+
 .website__subheading {
     display: inline;
 }
@@ -52,6 +96,7 @@ a:hover, a:visited, a {
     color: rgb(248, 241, 241);
     padding-bottom: 15rem;
     margin-left: -70px;
+    font-family: 'nanumgothiccodingregular' ,Arial, Helvetica, sans-serif;
 }
 
 .website__school {
@@ -125,13 +170,167 @@ a:hover, a:visited, a {
     justify-content: space-between;
     align-items: center;
     padding: 3.5%;
-    
+    border-bottom: 10px groove royalblue ;
 
 }
 
 
+.Aboutus__title {
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 550;
+    text-decoration: underline;
+}
 
 .About__text {
     font-size: 2rem;
+    font-family: 'nanumgothiccodingregular' ,Arial, Helvetica, sans-serif;
+    line-height: 3.5rem;
+}
+
+.AboutImg__control {
+    width: 250px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 930px) {
+    .About-comp {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .AboutImg__control {
+        width: 250px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .About__text {
+        font-size: 2.3rem;
+        font-family: 'nanumgothiccodingregular' ,Arial, Helvetica, sans-serif;
+        text-align: center;
+
+        
+    }
+}
+
+@media screen and (max-width: 697px) { 
+
+    .AboutImg__control {
+        width: 200px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .About__text {
+        font-size: 1.8rem;
+        font-family: 'nanumgothiccodingregular' ,Arial, Helvetica, sans-serif;
+        text-align: center;
+        
+    }
+
+    .Aboutus__title {
+        font-size: 2.2rem;
+        text-align: center;
+        font-weight: 550;
+        text-decoration: underline;
+    }
+}
+
+/* "Updates" component */
+
+.Updates__heading {
+    font-family:'nanumgothiccodingregular' ,Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: #cdcbd7;
+    text-decoration: underline;
+    
+    
+}
+
+.Updates__heading:hover { /* first two for banner:updates */
+    transform: rotate(360deg);
+    transition: transform 1s;
 
 }
+
+.Updates__banner {
+    background: url(/Videos/lion-running.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px ridge royalblue ;
+}
+
+
+
+
+
+/* cards of news */
+
+.News___Control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.KingCard {
+    background-image: url(/Images/Lion-HeadKSC.PNG);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 250px;
+    margin: 1rem;
+    width: 250px;
+    height: 350px;
+    border-radius: 1rem;
+    border: 1px solid grey;
+    position: relative;
+   
+}
+
+.card__body {
+    position: absolute;
+    height: 38%;
+    bottom: 0;   
+    padding: 8px;
+    background-color: #bfbbd0;
+    border-radius: 1rem; 
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    overflow: hidden;
+    
+}
+
+.card__title {
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+    
+
+}
+    
+.card__text{
+    font-size: 1.5rem;
+    text-align: center;
+    flex-grow: 1;
+
+}
+
+.Updates-comp {
+    padding-bottom: 1fr;
+    border-bottom: 10px ridge royalblue ;
+
+
+
+}
+
+/* googles calender */
