@@ -1,0 +1,63 @@
+body {
+    font-size: 62.5%;
+}
+
+a:hover, a:visited, a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.KingCard {
+    width: 15rem;
+    height: 22rem;
+    border-radius: 1rem;
+    border: 1px solid grey;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+        
+}
+
+.card__img > img {
+    position: absolute;
+    top: 0;
+    width: 15rem;
+    height: 14rem;
+    border-radius: 1rem;
+    justify-self: auto;
+}
+
+.card__img {
+    flex-grow: 1;
+}
+
+.card__body {
+    position: absolute;
+    bottom: 0;   
+    padding: 8px;
+    background-color: rgb(232, 222, 222);
+    border-radius: 1rem; 
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    
+}
+
+.card__title {
+    font-size: 1.3rem;
+    margin: 0;
+    text-align: center;
+    
+
+}
+    
+.card__text{
+    font-size: 1.2rem;
+    text-align: center;
+    flex-grow: 1;
+
+}
+
+
+
+
