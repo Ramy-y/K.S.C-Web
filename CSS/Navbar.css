@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'voltaire';
+  src: url('/CSS/FONTS/voltaire-regular-webfont.woff2') format('woff2'),
+       url('/CSS/FONTS/voltaire-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+a { 
+  text-decoration: none;
+}
+
+/*css for mobile layout*/
+
+.logo { /*king icon*/
+  width: 5.4rem;
+  height: 5.4rem;
+  
+}
+
+.nav__heading {
+  display: inline-block;
+  margin-top: 9px;
+  font-size: 2.5rem;
+  color: white;
+  margin-left: 1rem;
+  font-family: "voltaire", Arial, Helvetica, sans-serif;
+  
+}
+
+@media screen and (max-width: 350px) { 
+  /*gets rid of "King Student Council" on screens with width =<350px*/
+  .nav__heading {
+    display: none;
+  }
+}
+
+
+.nav { /*navigation bar styles*/
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  align-items: center;
+}
+
+.list__item {
+  font-size: 2.3rem;
+  padding: 0.5rem 2rem;
+  padding-bottom: 2.3rem;
+}
+
+.list__item > a { 
+  color: #d2d0db;
+}
+
+.list__item > a:hover { /*reactive hover effect on nav items*/
+  color: #fff;
+  transition: color, .8s;
+  
+}
+
+.sub__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+.icon.nav__toggler { /*solid-bars icon*/
+  width: 4rem;
+  height: 4rem;
+}
+
+.nav__list {
+  width: 100%;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  
+}
+/* from this point to the media query: responsible 
+for the collapsible effect on mobile navbar*/
+.nav__toggler {
+  opacity: 0.5;
+  transition-property: opacity, transform;
+  transition-duration: 0.4s, 0.5s;
+  transform: rotate(0deg);  
+  cursor: pointer;
+}
+
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition-property: max-height, opacity, margin-top;
+  transition-duration: 0.6s, 0.6s, 0.4s;
+}
+
+.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  transform: rotate(350deg);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+  margin-top: 3rem;
+  transition-property: max-height, opacity;
+  transition-duration: 0.8s, 0.8s;
+  
+}
+
+@media screen and (min-width: 950px) { /*Desktop layout*/
+  
+  /*first 5 rules essential for removal of mobile layout*/
+  
+  .nav__list {
+    max-height: 100%;
+    opacity: 1;
+    position: relative;
+    right: 3%;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .nav__item {
+    border: 0;
+
+  }
+
+  .collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+    margin-top: 0;
+    transition-property: none;
+    transition-duration: none;
+    
+  }
+
+.nav {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  display: inline-block;
+}
+
+  .sub__title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    align-items: center;
+    margin-right: 10px;
+    padding-bottom: 6.5rem;
+    
+  }
+    
+  .logo {
+    width: 14rem;
+    height: 14rem;
+    margin: 10px;
+  }
+  
+  .nav__heading {
+    align-self: center;
+    justify-self: center;
+    display: block;
+    margin-top: 12px;
+    font-size: 2.5rem;
+    font-family: "voltaire", Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+  }
+
+}
+
+
+
+  
+
+ 
+
+
+
