@@ -1,0 +1,138 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    height: 200vh;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a:hover, a:visited, a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+/* "First component of the skeleton */
+
+.First__compo {
+    background: url(/Videos/podium-lion.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px ridge royalblue;
+}
+
+.pride__con {
+    height: 3.8rem;
+    width: 3.8rem;
+    margin-left: 10px;
+    transform: translateY(2px);
+    cursor: pointer;
+} 
+
+.website__subheading {
+    display: inline;
+}
+
+.Head__Text {
+    font-size: 3rem;
+    color: rgb(248, 241, 241);
+    padding-bottom: 15rem;
+    margin-left: -70px;
+}
+
+.website__school {
+    color: #cdcbd7;
+}
+
+.website__heading {
+    width: 80vw;
+    padding-bottom: 1rem;
+    border-bottom: 12px ridge rgb(6, 35, 119)
+}
+
+@media screen and (max-width: 697px) {
+    .Head__Text {
+        font-size: 1.9rem;
+        color: rgb(248, 241, 241);
+        padding-bottom: 15rem;
+        margin-left: -50px;
+    }
+
+    .website__heading {
+        width: 80vw;
+        padding-bottom: 1rem;
+        border-bottom: 8px ridge rgb(6, 35, 119)
+    }
+
+    .pride__con {
+        width: 3.3rem;
+        height: 3.3rem;
+        transform: translateY(3px);
+        
+    }
+
+
+}
+   
+@media screen and (max-width: 440px) {
+    .Head__Text {
+        font-size: 1.5rem;
+        color: rgb(248, 241, 241);
+        padding-bottom: 15rem;
+        margin-left: -30px;
+    }
+
+    .website__heading {
+        width: 80vw;
+        padding-bottom: 1rem;
+        border-bottom: 8px ridge rgb(6, 35, 119)
+    }
+
+    .pride__con {
+        width: 2.4rem;
+        height: 2.4rem;
+        transform: translateY(3px);
+        
+    }
+
+
+}
+
+
+/* "About" component of the body skeleton */
+
+.About-comp {
+    background-color: lightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5%;
+    
+
+}
+
+
+
+.About__text {
+    font-size: 2rem;
+    
+    overflow: hidden;
+}
