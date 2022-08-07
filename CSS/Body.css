@@ -284,7 +284,7 @@ a:hover, a:visited, a {
 }
 
 .KingCard {
-    background-image: url(/Images/Lion-HeadKSC.PNG);
+    background-image: url(/Images/Lion-HeadKSC.PNG); /*adjust picture of card here*/
     background-repeat: no-repeat;
     background-position: top;
     background-size: 250px;
@@ -333,4 +333,43 @@ a:hover, a:visited, a {
 
 }
 
+/* Instagram blog */
+
+.blog {
+    padding-top: 10px;
+    border-bottom: 10px ridge royalblue ; ;
+}
+
 /* googles calender */
+
+.link-solid {
+    height: 30px;
+    width: 30px;
+}
+
+.google-calender {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 10px groove royalblue;
+    
+}
+
+.google__heading {
+    align-self: center;
+    font-size: 5rem;
+}
+
+.calender__div {
+    align-self: center;
+}
+
+@media screen and (max-width: 826px) {
+    .calender__div {
+        display: none;
+    }
+
+
+}
+
