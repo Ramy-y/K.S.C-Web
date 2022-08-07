@@ -1,9 +1,38 @@
+/* Initializations */
+@font-face {
+    font-family: 'voltaire';
+    src: url('/CSS/FONTS/voltaire-regular-webfont.woff2') format('woff2'),
+         url('/CSS/FONTS/voltaire-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'nanumgothiccodingbold';
+    src: url('nanumgothiccoding-bold-webfont.woff2') format('woff2'),
+         url('nanumgothiccoding-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nanumgothiccodingregular';
+    src: url('nanumgothiccoding-regular-webfont.woff2') format('woff2'),
+         url('nanumgothiccoding-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
+    box-sizing: border-box;
     margin: 0;
+    overflow: hidden;
 }
 
 ul {
@@ -16,3 +45,5 @@ a:hover, a:visited, a {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
+
+/* CSS Code for website begins here */
