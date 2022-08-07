@@ -39,7 +39,6 @@ a:hover, a:visited, a {
     background-size: cover;
     background-position: center, center;
     height: 100vh;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +59,7 @@ a:hover, a:visited, a {
     height: 50px;
     width: 50px;
     transform: translateY(160px);
-    fill: #bfbbd0;
+    fill: #898890;
 }
 
 @media screen and (max-width: 764px) {
@@ -110,10 +109,11 @@ a:hover, a:visited, a {
 
 .Head__Text {
     font-size: 3rem;
-    color: rgb(248, 241, 241);
+    color: rgb(255, 255, 255);
     padding-bottom: 15rem;
     margin-left: -70px;
     font-family: 'nanumgothiccodingregular' ,Arial, Helvetica, sans-serif;
+    text-align: right;
 }
 
 .website__school {
@@ -161,7 +161,7 @@ a:hover, a:visited, a {
     .website__heading {
         width: 80vw;
         padding-bottom: 1rem;
-        border-bottom: 8px ridge rgb(6, 35, 119)
+        border-bottom: 8px ridge rgb(39, 77, 189)
     }
 
     .pride__con {
@@ -401,10 +401,13 @@ a:hover, a:visited, a {
 /* footer component */
 
 .bod__footer {
-    background: rgb(3, 3, 89);
-    height: 20rem;
+    background-color: rgb(3, 3, 89);
+    height: fit-content;
     position: relative;
     bottom: 0;
+    
+    
+    
 
     
 }
@@ -420,7 +423,7 @@ a:hover, a:visited, a {
 .copyrights {
     color: #d2d0db;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .copyrights__except {
@@ -457,12 +460,13 @@ a:hover, a:visited, a {
 }
 
 .bottom__border {
-    width: 13rem;
+    width: 19rem;
     border-top: 1px solid #d2d0db;
 }
 
 .smedias {
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
     height: 5rem;
     width: 5rem;
     
