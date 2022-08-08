@@ -33,6 +33,11 @@ a:hover, a:visited, a {
 
 /* "First component of the skeleton */
 
+
+
+
+
+
 .First__compo {
     background: url(/Videos/podium-lion.gif);
     background-repeat: no-repeat;
@@ -113,7 +118,7 @@ a:hover, a:visited, a {
     padding-bottom: 15rem;
     margin-left: -70px;
     font-family: 'nanumgothiccodingregular' ,Arial, Helvetica, sans-serif;
-    text-align: right;
+    text-align: left;
 }
 
 .website__school {
