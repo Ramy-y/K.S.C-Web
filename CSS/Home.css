@@ -5,21 +5,22 @@
          url('/CSS/FONTS/voltaire-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    
   }
 
   @font-face {
-    font-family: 'nanumgothiccodingbold';
-    src: url('nanumgothiccoding-bold-webfont.woff2') format('woff2'),
-         url('nanumgothiccoding-bold-webfont.woff') format('woff');
+    font-family: 'nanum-gothic-coding-bold';
+    src: url('/CSS/FONTS/nanumgothiccoding-bold-webfont.woff2') format('woff2'),
+         url('/CSS/FONTS/nanumgothiccoding-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'nanumgothiccodingregular';
-    src: url('nanumgothiccoding-regular-webfont.woff2') format('woff2'),
-         url('nanumgothiccoding-regular-webfont.woff') format('woff');
+    font-family: 'nanum-gothic-coding';
+    src: url('/CSS/FONTS/nanumgothiccoding-regular-webfont.woff2') format('woff2'),
+         url('/CSS/FONTS/nanumgothiccoding-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -251,7 +252,7 @@ a:hover, a:visited, a {
 /* "First component of the skeleton */
 
 
-.First__compo {
+.First__compo { /*First__compo is the blueprint for positioning the main page's heading within the div */
     background: url(/Videos/podium-lion.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -264,8 +265,6 @@ a:hover, a:visited, a {
     border-bottom: 10px ridge royalblue;
     
 }
-
-
 
 .pride__con {
     height: 3.8rem;
@@ -283,12 +282,13 @@ a:hover, a:visited, a {
 }
 
 @media screen and (min-width:950px) {
-    .First__compo { /*this is the blueprint of positioning the main pages heading within the div */
+    .First__compo { 
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 
     .body-content{ /*important! it maintains cosmetic integrity of the page layout */
@@ -616,6 +616,7 @@ a:hover, a:visited, a {
     font-size: 1.5rem;
     text-align: center;
     flex-grow: 1;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -679,6 +680,7 @@ a:hover, a:visited, a {
     height: fit-content;
     position: relative;
     bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
     
     
     
@@ -697,7 +699,7 @@ a:hover, a:visited, a {
 .copyrights {
     color: #d2d0db;
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .copyrights__except {
