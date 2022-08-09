@@ -517,11 +517,19 @@ a:hover, a:visited, a {
   .collapsible__heading {
     font-size: 3rem;
   }
+  .Lilcollapsible {
+    font-size: 2.2rem;
+    
+}
 }
 @media screen and (max-width:415px){
     .collapsible__heading {
       font-size: 2.4rem;
     }
+    .Lilcollapsible {
+      font-size: 1.9rem;
+      
+  }
 }
 @media screen and (max-width:340px){
   .collapsible__heading {
