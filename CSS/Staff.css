@@ -530,6 +530,7 @@ a:hover, a:visited, a {
       font-size: 1.9rem;
       
   }
+    
 }
 @media screen and (max-width:340px){
   .collapsible__heading {
@@ -693,6 +694,7 @@ a:hover, a:visited, a {
   cursor: pointer;
 }
 
+/*footer*/
 
 .bod__footer {
   background-color: rgb(3, 3, 89);

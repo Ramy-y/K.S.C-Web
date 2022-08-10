@@ -23,8 +23,126 @@
     <link rel="icon" href="../Images/power-lion.png" type="image/x-icon" />
     <link rel="stylesheet" href="/CSS/normalize CSS.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="stylesheet" href="/CSS/Clubs.css" />
     <title>King Student Council</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="nav collapsible">
+        <div class="sub__title">
+          <a href="/a-Home/Home.html"
+            ><img class="logo" src="/Images/tranparent-head.png" alt=""
+          /></a>
+          <span class="nav__heading">KING STUDENT COUNCIL</span>
+        </div>
+
+        <svg class="icon nav__toggler" fill="white">
+          <use xlink:href="/gigasprite.svg#bars-solid"></use>
+        </svg>
+
+        <ul class="list nav__list collapsible__content">
+          <li class="list__item"><a href="/a-Home/Home.html">Hub</a></li>
+          <li class="list__item"><a href="#">Contact Us!</a></li>
+          <li class="list__item">
+            <a href="/2 Clubs/Clubs.html">Extracurriculars</a>
+          </li>
+          <li class="list__item">
+            <a href="/3 Staff info/Staff.html">Staff Info</a>
+          </li>
+          <li class="list__item"><a href="#">Help Resources</a></li>
+          <li class="list__item"><a href="#">School Map</a></li>
+          <li class="list__item">
+            <a href="https://kingsleyvoice.com/" target="_blank"
+              >Kingsly Voice</a
+            >
+          </li>
+          <li class="list__item">
+            <a
+              href="https://schoolweb.tdsb.on.ca/rhkingacademy/"
+              target="_blank"
+              >King Website</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="body-content">
+      <div class="First__compo">
+        <header class="Head__Text">
+          <h1 class="website__heading">Clubs & Councils</h1>
+          <div class="test">
+            <svg class="icon pride__con">
+              <use xlink:href="/gigasprite.svg#archway-solid"></use>
+            </svg>
+          </div>
+        </header>
+      </div>
+
+      <div class="About-comp">
+        <div class="clubs__description">
+          <span class="Extracurricular__title"
+            >King offers a diverse set of Clubs and Councils during the school
+            year!</span
+          >
+          <p>Zoom in or pop-out another window for a closer look!</p>
+        </div>
+        <span class="Councils-title" data-aos="slide-up">Councils!</span>
+        <iframe
+          data-aos="slide-up"
+          class="KingCouncils-pdf"
+          sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals"
+          frameborder="0"
+          aria-label="Drive, R.H. King Leadership Council List - ACTIVE.pdf"
+          allowfullscreen=""
+          src="https://drive.google.com/file/d/1g3nbKY7L0YTr0e_51v8GHRcz8dV17eb8/preview?authuser=0"
+        ></iframe>
+        <span class="Clubs-title" data-aos="slide-up">Clubs!</span>
+        <iframe
+          data-aos="slide-up"
+          class="KingClubs-pdf"
+          sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals"
+          frameborder="0"
+          aria-label="Drive, R.H. King Club List - ACTIVE.pdf"
+          allowfullscreen=""
+          src="https://drive.google.com/file/d/1IjwGFoZWIdK-07Qv3Dmzw8yH6_ueUrUB/preview?authuser=0"
+        ></iframe>
+      </div>
+
+      <footer class="bod__footer">
+        <div class="footer__content">
+          <div class="text__media">
+            <a class="to-the-top" href="#"
+              ><svg class="icon go__up">
+                <use xlink:href="/gigasprite.svg#arrow-up-long-solid"></use>
+              </svg>
+              <p class="copyrights copyrights__except">click to the top!</p>
+            </a>
+            <p class="copyrights">&copy; 2022 R.H. King Student Council</p>
+            <div class="bottom__border"></div>
+            <p class="copyrights">Programmed by R</p>
+          </div>
+          <div class="social__media">
+            <a href="https://www.instagram.com/rhkingksc/?hl=fr" target="_blank"
+              ><img
+                class="smedias media__singular"
+                src="/Images/instagram-logo.png"
+                alt="Instagram logo"
+            /></a>
+            <a href="https://twitter.com/rhkingacademy" target="_blank"
+              ><img
+                class="smedias media__secondary"
+                src="/Images/Twitter-bird.png"
+                alt="Twitter logo"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
