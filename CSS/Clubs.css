@@ -423,7 +423,7 @@ for the collapsible effect on mobile navbar*/
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  text-align: center;
   padding: 3.5%;
   border-bottom: 10px groove royalblue ;
   
@@ -434,41 +434,6 @@ for the collapsible effect on mobile navbar*/
 
 
 
-.StaffInfo__title {
-  font-size: 3.8rem;
-  margin-bottom: 70px;
-  text-align: center;
-  font-weight: 550;
-  text-decoration: underline;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-
-
-
-@media screen and (max-width: 930px) {
-  .About-comp {
-      
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-  
-  }
-  
-}
-
-@media screen and (max-width: 697px) { 
-
-
-  .StaffInfo__title {
-      font-size: 2.2rem;
-      text-align: center;
-      font-weight: 550;
-      text-decoration: underline;
-  }
-}
 /* Body content (the pdf) */
 
 .KingClubs-pdf, .KingCouncils-pdf{

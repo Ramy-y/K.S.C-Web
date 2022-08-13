@@ -595,20 +595,19 @@ a:hover, a:visited, a {
 /* Icons */
 
 .apple-icon {
-    fill: rgb(118, 11, 11);
     cursor: pointer;
 }
 
 
 .music-icon {
-    fill: black;
+    
     height: var(--icon-height);
     width: var(--icon-width);
     cursor: pointer;
 }
 
 .helping-hand-icon {
-  fill: rgb(230, 189, 140);
+  
   height: var(--icon-height);
   width: var(--icon-width);
   cursor: pointer;
