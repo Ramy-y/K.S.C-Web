@@ -1,8 +1,8 @@
 /* Initializations */
 @font-face {
     font-family: 'voltaire';
-    src: url('/CSS/FONTS/voltaire-regular-webfont.woff2') format('woff2'),
-         url('/CSS/FONTS/voltaire-regular-webfont.woff') format('woff');
+    src: url('/y-CSS/FONTS/voltaire-regular-webfont.woff2') format('woff2'),
+         url('/y-CSS/FONTS/voltaire-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     
@@ -10,8 +10,8 @@
 
   @font-face {
     font-family: 'nanum-gothic-coding-bold';
-    src: url('/CSS/FONTS/nanumgothiccoding-bold-webfont.woff2') format('woff2'),
-         url('/CSS/FONTS/nanumgothiccoding-bold-webfont.woff') format('woff');
+    src: url('/y-CSS/FONTS/nanumgothiccoding-bold-webfont.woff2') format('woff2'),
+         url('/y-CSS/FONTS/nanumgothiccoding-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 
@@ -19,8 +19,8 @@
 
 @font-face {
     font-family: 'nanum-gothic-coding';
-    src: url('/CSS/FONTS/nanumgothiccoding-regular-webfont.woff2') format('woff2'),
-         url('/CSS/FONTS/nanumgothiccoding-regular-webfont.woff') format('woff');
+    src: url('/y-CSS/FONTS/nanumgothiccoding-regular-webfont.woff2') format('woff2'),
+         url('/y-CSS/FONTS/nanumgothiccoding-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

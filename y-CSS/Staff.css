@@ -3,15 +3,12 @@
 :root {
     --icon-width: 40px;
     --icon-height: 40px;
-    --inherit: inherit;
-      
-    
 }
 
 @font-face {
     font-family: 'voltaire';
-    src: url('/CSS/FONTS/voltaire-regular-webfont.woff2') format('woff2'),
-         url('/CSS/FONTS/voltaire-regular-webfont.woff') format('woff');
+    src: url('/y-CSS/FONTS/voltaire-regular-webfont.woff2') format('woff2'),
+         url('/y-CSS/FONTS/voltaire-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     
@@ -19,8 +16,8 @@
 
   @font-face {
     font-family: 'nanum-gothic-coding-bold';
-    src: url('/CSS/FONTS/nanumgothiccoding-bold-webfont.woff2') format('woff2'),
-         url('/CSS/FONTS/nanumgothiccoding-bold-webfont.woff') format('woff');
+    src: url('/y-CSS/FONTS/nanumgothiccoding-bold-webfont.woff2') format('woff2'),
+         url('/y-CSS/FONTS/nanumgothiccoding-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 
@@ -28,8 +25,8 @@
 
 @font-face {
     font-family: 'nanum-gothic-coding';
-    src: url('/CSS/FONTS/nanumgothiccoding-regular-webfont.woff2') format('woff2'),
-         url('/CSS/FONTS/nanumgothiccoding-regular-webfont.woff') format('woff');
+    src: url('/y-CSS/FONTS/nanumgothiccoding-regular-webfont.woff2') format('woff2'),
+         url('/y-CSS/FONTS/nanumgothiccoding-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -283,10 +280,11 @@ a:hover, a:visited, a {
 
 
   .First__compo { /*First__compo is the blueprint for positioning the main page's heading within the div */
-    background-image: url(/Videos/PatternTopology.gif);
+    background-image: url(/Images/blurred-oldKing.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
+    background-attachment: fixed;
     height: 95vh;
     display: flex;
     flex-direction: column;
@@ -413,14 +411,19 @@ a:hover, a:visited, a {
 
 
 
+
+
+
+
+
+
 /* "About" component of the body skeleton */
 
 .About-comp {
-    background-image: url(/Videos/Galaxy\ cartoonpop.gif) ;
+    background-color: rgb(146, 198, 216);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -428,8 +431,6 @@ a:hover, a:visited, a {
     align-items: center;
     padding: 3.5%;
     border-bottom: 10px groove royalblue ;
-    color: white;
-    font-family: "voltaire",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     
 
 }
@@ -438,170 +439,261 @@ a:hover, a:visited, a {
 
 
 
-
-/* Contact card*/
-
-
-.card-text > .teacher__email {
-    font: var(--inherit);
-    color: #cdcbd7;
+.StaffInfo__title {
+    font-size: 3.8rem;
+    margin-bottom: 70px;
+    text-align: center;
+    font-weight: 550;
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.card-text > .Instagram-linker {
-  font: var(--inherit);
+
+
+
+
+@media screen and (max-width: 930px) {
+    .About-comp {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     
-    color: #cdcbd7;
-} 
-
-
-.link-solid {
-    width: 30px;
-    height: 30px;
-    fill: #cdcbd7;
+    }
+    
 }
 
-.ContactUstitle {
-  text-decoration: underline;
-  font-size: 3.3rem;
+@media screen and (max-width: 697px) { 
+
+
+    .StaffInfo__title {
+        font-size: 2.2rem;
+        text-align: center;
+        font-weight: 550;
+        text-decoration: underline;
+    }
 }
 
-.ContactUstitle:hover {
-  transform: scale(1.1);
-  transition: transform .5s;
+
+
+
+
+
+
+
+/* Collapsible component*/
+
+/*please note: I have created the prefix of 'Lil' for the js to differentiate between the navbar collapsible and the item collapsible - my sense of humour is unscalable */ 
+
+.collap__text {
+    text-align: center;
+    padding-top: 2rem;
 }
 
-.Contact__card {
-  background-image: url(/Images/Pattern.jpeg) ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center, center;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  line-height: 0;
-  border-bottom: 10px groove royalblue ;
-  color: #cdcbd7;
-  font-family: "voltaire",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
 
-.card-text {
+
+.Lilcollapsible {
     font-size: 3rem;
+    width: 100%;
+    font-family: "voltaire", Arial, Helvetica, sans-serif;
+    margin-bottom: 80px;
 }
-
-@media screen and (max-width: 599px) { /*resizing the text for smaller screens*/
-
-  .card-text {
-    font-size: 2rem;
-}
-
-.link-solid {
-  width: 20px;
-  height: 20px;
-  fill: #cdcbd7;
-}
-
-}
-
-@media screen and (max-width: 399px) {
-
-  .card-text {
-    font-size: 1.7rem;
-}
-
-.link-solid {
-  width: 15px;
-  height: 15px;
-  fill: #cdcbd7;
-}
-
-}
-
-
-
-/*About Component (where memebers reside)*/
-
-.About-Title {
-  font-size: 4rem;
-  color: #cdcbd7;
-  text-decoration: underline;
-  padding-bottom: 3rem;
-  text-align: center;
-
-}
-
-.role {
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 2.6rem;
-  color: #cdcbd7;
   
-}
-
-@media screen and (max-width: 613px) {
-  .About-Title {
-    font-size: 3.0rem;
-    color: #cdcbd7;
-    text-decoration: underline;
-    padding-bottom: 3rem;
-    text-align: center;
-  
+  .collapsible__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px groove grey;
+    cursor: pointer;
+    
   }
   
-  .role {
-    margin-bottom: 30px;
-    text-align: center;
+  .collapsible__heading {
+    margin-top: 0;
+    font-size: 4rem;
+    
+  }
+
+@media screen and (max-width:525px) {
+  .collapsible__heading {
+    font-size: 3rem;
+  }
+  .Lilcollapsible {
     font-size: 2.2rem;
-    color: #cdcbd7;
     
+}
+}
+@media screen and (max-width:415px){
+    .collapsible__heading {
+      font-size: 2.4rem;
+    }
+    .Lilcollapsible {
+      font-size: 1.9rem;
+      
+  }
+    
+}
+@media screen and (max-width:340px){
+  .collapsible__heading {
+    font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 518px) {
-  .About-Title {
-    font-size: 2.5rem;
-    color: #cdcbd7;
+  .collapsible__chevron, .apple-icon {
+    height: var(--icon-height);
+    width: var(--icon-width);
+  }
+  
+
+  .collapsible__chevron { /*collapsible drop down menu*/
+    transform: rotate(-360deg);
+    transition: transform, 0.5s;
+    
+    
+  }
+  
+  .Lilcollapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+    
+    
+}
+
+.collapsible--expanded .collapsible__chevron {
+    transform: rotate(90deg);
+    
+    
+}
+
+.collapsible--expanded .Lilcollapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0; 
+    
+}
+
+
+.teacher__name > .teacher__email {
+    font: inherit;
+    margin-left: 10px;
+}
+
+.teacher-link-solid {
+    height: calc(var(--icon-height) - 10px);
+    width: calc(var(--icon-width) - 10px);
+}
+
+.teacher__title {
+    font-size: 3.8rem;
+    font-weight: 400px;
     text-decoration: underline;
-    padding-bottom: 3rem;
-    text-align: center;
-  
-  }
-  
-  .role {
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 1.9rem;
-    color: #cdcbd7;
     
-  }
 }
 
-@media screen and (max-width: 448px) {
-  
-  .role {
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 1.9rem;
-    color: #cdcbd7;
-    line-height: 3rem;
+.Vice-principals {
+    display: block;
+}
+
+
+/* Icons */
+
+.apple-icon {
+    cursor: pointer;
+}
+
+
+.music-icon {
     
-  }
+    height: var(--icon-height);
+    width: var(--icon-width);
+    cursor: pointer;
 }
 
-
-.role__name {
-  border-bottom: 3px groove blue;
+.helping-hand-icon {
   
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
 }
 
-.spacer {
-  padding: 2rem;
+.envelopes-bulk-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+ 
 }
 
+.book-atlas-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+}
 
+.SpeachBubble-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+}
 
+.scale-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+}
 
+.globe-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+}
+
+.MoneyStash-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+}
+
+.dumbbell-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+}
+
+.briefcase-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+}
+
+.ComputerScience-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+}
+
+.calculator-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+}
+
+.atom-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+}
+
+.book-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+}
+
+.feather-icon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  cursor: pointer;
+}
 
 /*footer*/
 
