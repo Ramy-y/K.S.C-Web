@@ -220,15 +220,13 @@ a:hover, a:visited, a {
       
     }
 
-    .sub__title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        bottom: 80px;
-          
-  
-      }
+    .sub__title > a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      bottom: 80px;
+    }
   
     .nav__toggler { /*essential for removal of mobile layout*/
       display: none;
@@ -286,6 +284,7 @@ a:hover, a:visited, a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
+    background-attachment: fixed;
     height: 95vh;
     display: flex;
     flex-direction: column;
@@ -530,6 +529,7 @@ a:hover, a:visited, a {
       font-size: 1.9rem;
       
   }
+    
 }
 @media screen and (max-width:340px){
   .collapsible__heading {
@@ -693,6 +693,7 @@ a:hover, a:visited, a {
   cursor: pointer;
 }
 
+/*footer*/
 
 .bod__footer {
   background-color: rgb(3, 3, 89);
@@ -789,4 +790,15 @@ a:hover, a:visited, a {
 .media__secondary:hover {
   transform: scale(1.2);
   transition: transform .5s;
+}
+
+@media screen and (max-width: 297px){
+  .footer__content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 2rem;
+  }
+
 }
