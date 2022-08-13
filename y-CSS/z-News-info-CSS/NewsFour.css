@@ -83,142 +83,154 @@ a:hover, a:visited, a {
 
 /*css for mobile layout, Navigation component*/
 
-  .logo { /*king icon*/
-    width: 5.4rem;
-    height: 5.4rem;
-    
-  }
+ 
+.navigation__bar {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100vw;
+}
+
+.logo { /*king icon*/
+  width: 5.4rem;
+  height: 5.4rem;
   
+}
+
+.nav__heading {
+  display: inline-block;
+  margin-top: 9px;
+  font-size: 2.5rem;
+  color: white;
+  margin-left: 1.2rem;
+  font-family: "voltaire", Arial, Helvetica, sans-serif;
+  
+}
+
+
+.sub__title > a {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 350px) { 
+  /*gets rid of "King Student Council" on screens with width =<350px*/
   .nav__heading {
-    display: inline-block;
-    margin-top: 9px;
-    font-size: 2.5rem;
-    color: white;
-    margin-left: 1.2rem;
-    font-family: "voltaire", Arial, Helvetica, sans-serif;
-    
+    display: none;
   }
+}
 
+
+.nav { /*navigation bar styles*/
   
-  @media screen and (max-width: 350px) { 
-    /*gets rid of "King Student Council" on screens with width =<350px*/
-    .nav__heading {
-      display: none;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  align-items: center;
+  
+  
+}
+
+.list__item {
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  padding-bottom: 2.3rem;
+  
+}
+
+
+
+.list__item > a { 
+  color: #d2d0db;
+}
+
+.list__item > a:hover { /*reactive hover effect on nav items*/
+  color: #fff;
+  transition: color, .8s;
+  
+}
+
+
+
+
+
+.icon.nav__toggler { /*solid-bars icon*/
+  width: 4rem;
+  height: 4rem;
+}
+
+.nav__list {
+  width: 100%;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  
+}
+/* from this point to the media query: responsible 
+for the collapsible effect on mobile navbar*/
+.nav__toggler {
+  opacity: 0.5;
+  transition-property: opacity, transform;
+  transition-duration: 0.4s, 0.5s;
+  transform: rotate(0deg);  
+  cursor: pointer;
+}
+
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition-property: max-height, opacity, margin-top;
+  transition-duration: 0.6s, 0.6s, 0.4s;
+}
+
+.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  transform: rotate(350deg);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+  margin-top: 3rem;
+  transition-property: max-height, opacity;
+  transition-duration: 0.8s, 0.8s;
+  
+}
+
+@media screen and (min-width: 950px) { /*Desktop layout*/
+  
+  
+
+  .nav {
+      position: fixed;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 250px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0rem;  
     }
-  }
-  
-  
-  .nav { /*navigation bar styles*/
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem;
-    align-items: center;
-    z-index: 99999;
-  }
-  
-  .list__item {
-    font-size: 2rem;
-    padding: 0.5rem 2rem;
-    padding-bottom: 2.3rem;
-  }
 
 
-
-  .list__item > a { 
-    color: #d2d0db;
-  }
-  
-  .list__item > a:hover { /*reactive hover effect on nav items*/
-    color: #fff;
-    transition: color, .8s;
-    
-  }
-  
-  .sub__title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  
-  
-  .icon.nav__toggler { /*solid-bars icon*/
-    width: 4rem;
-    height: 4rem;
-  }
-  
   .nav__list {
-    width: 100%;
-    padding-left: 0;
+    max-height: 100%;
+    opacity: 1;
+    position: relative;
+    bottom: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    list-style: none;
-    margin: 0;
     
   }
-  /* from this point to the media query: responsible 
-  for the collapsible effect on mobile navbar*/
-  .nav__toggler {
-    opacity: 0.5;
-    transition-property: opacity, transform;
-    transition-duration: 0.4s, 0.5s;
-    transform: rotate(0deg);  
-    cursor: pointer;
-  }
-  
-  .collapsible__content {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition-property: max-height, opacity, margin-top;
-    transition-duration: 0.6s, 0.6s, 0.4s;
-  }
-  
-  .collapsible--expanded .nav__toggler {
-    opacity: 1;
-    transform: rotate(350deg);
-  }
-  
-  .collapsible--expanded .collapsible__content {
-    max-height: 100vh;
-    opacity: 1;
-    margin-top: 3rem;
-    transition-property: max-height, opacity;
-    transition-duration: 0.8s, 0.8s;
-    
-  }
-  
-  @media screen and (min-width: 950px) { /*Desktop layout*/
-    
-    
-
-    .nav {
-        position: fixed;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        width: 250px;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 0rem;  
-      }
-
-
-    .nav__list {
-      max-height: 100%;
-      opacity: 1;
-      position: relative;
-      bottom: 0px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
-    }
 
     .sub__title > a {
       display: flex;
@@ -227,49 +239,49 @@ a:hover, a:visited, a {
       position: relative;
       bottom: 80px;
     }
-  
-    .nav__toggler { /*essential for removal of mobile layout*/
-      display: none;
-    }
-  
-    .nav__item { /*essential for removal of mobile layout*/
-      border: 0;
-  
-    }
-  
-    .collapsible--expanded .collapsible__content { /*essential for removal of mobile layout*/
-      max-height: 100vh;
-      opacity: 1;
-      margin-top: 0;
-      transition-property: none;
-      transition-duration: none;
-      
-    }
-  
-  
-    .logo {
-      width: 14rem;
-      height: 14rem;
-      
-    }
-    
-    .nav__heading {
-      align-self: center;
-      justify-self: center;
-      display: block;
-      margin-left: 0rem;
-      margin-top: 20px;
-      font-size: 2.5rem;
-      font-family: "voltaire", Arial, Helvetica, sans-serif;
-      text-align: center;
-      
-    }
 
-    body { /*essential*/
-        display: flex;
-    }
-  
+  .nav__toggler { /*essential for removal of mobile layout*/
+    display: none;
   }
+
+  .nav__item { /*essential for removal of mobile layout*/
+    border: 0;
+
+  }
+
+  .collapsible--expanded .collapsible__content { /*essential for removal of mobile layout*/
+    max-height: 100vh;
+    opacity: 1;
+    margin-top: 0;
+    transition-property: none;
+    transition-duration: none;
+    
+  }
+
+
+  .logo {
+    width: 14rem;
+    height: 14rem;
+    
+  }
+  
+  .nav__heading {
+    align-self: center;
+    justify-self: center;
+    display: block;
+    margin-left: 0rem;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    font-family: "voltaire", Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+  }
+
+  body { /*essential*/
+      display: flex;
+  }
+
+}
 
 
 
@@ -285,7 +297,7 @@ a:hover, a:visited, a {
     background-size: cover;
     background-position: center, center;
     background-attachment: fixed;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

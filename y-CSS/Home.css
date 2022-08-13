@@ -35,7 +35,7 @@ body {
     margin: 0;
     overflow: hidden;
     overflow-y: auto;
-
+    
 }
 
 ul {
@@ -79,6 +79,13 @@ a:hover, a:visited, a {
 
 /*css for mobile layout, Navigation component*/
 
+.navigation__bar {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100vw;
+}
+
 .logo { /*king icon*/
     width: 5.4rem;
     height: 5.4rem;
@@ -95,6 +102,11 @@ a:hover, a:visited, a {
     
   }
 
+
+  .sub__title > a {
+    display: flex;
+    align-items: center;
+  }
   
   @media screen and (max-width: 350px) { 
     /*gets rid of "King Student Council" on screens with width =<350px*/
@@ -105,13 +117,15 @@ a:hover, a:visited, a {
   
   
   .nav { /*navigation bar styles*/
+    
     background-color: #000;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem;
     align-items: center;
-    z-index: 99999;
+    
+    
   }
   
   .list__item {
@@ -133,11 +147,7 @@ a:hover, a:visited, a {
     
   }
   
-  .sub__title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+
   
   
   
@@ -280,7 +290,7 @@ a:hover, a:visited, a {
     background-size: cover;
     background-position: center, center;
     background-attachment: fixed;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -325,35 +335,35 @@ a:hover, a:visited, a {
 
 @media screen and (max-width: 950px) {
     .director {
-        transform: translateY(110px);
+        transform: translateY(190px);
     }
     
 }
 
 @media screen and (max-width: 697px) {
     .director {
-        transform: translateY(155px);
+        transform: translateY(180px);
     }
     
 }
 
 @media screen and (max-width: 483px) {
     .director {
-        transform: translateY(130px);
+        transform: translateY(220px);
     }
     
 }
 
 @media screen and (max-width: 437px) {
     .director {
-        transform: translateY(140px);
+        transform: translateY(170px);
     }
     
 }
 
 @media screen and (max-width: 325px) {
     .director {
-        transform: translateY(150px);
+        transform: translateY(180px);
     }
     
 }
@@ -412,9 +422,9 @@ a:hover, a:visited, a {
 
 }
    
-@media screen and (max-width: 508px) {
+@media screen and (max-width: 593px) {
     .Head__Text {
-        font-size: 1.8rem;
+        font-size: 2rem;
         color: rgb(248, 241, 241);
         padding-bottom: 15rem;
         margin-left: -30px;
@@ -434,9 +444,9 @@ a:hover, a:visited, a {
     }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 469px) {
     .Head__Text {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         color: rgb(248, 241, 241);
         padding-bottom: 15rem;
         margin-left: -30px;
@@ -451,6 +461,35 @@ a:hover, a:visited, a {
     .pride__con {
         width: 2.4rem;
         height: 2.4rem;
+        transform: translateY(3px);
+        
+    }
+
+
+}
+
+@media screen and (max-width: 399px) {
+    .director {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Head__Text {
+        font-size: 1.4rem;
+        color: rgb(248, 241, 241);
+        padding-bottom: 15rem;
+        margin-left: -30px;
+    }
+
+    .website__heading {
+        width: 65vw;
+        padding-bottom: 1rem;
+        border-bottom: 8px ridge rgb(39, 77, 189)
+    }
+
+    .pride__con {
+        width: 1.8rem;
+        height: 1.8rem;
         transform: translateY(3px);
         
     }
