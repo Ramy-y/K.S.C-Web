@@ -217,14 +217,12 @@ for the collapsible effect on mobile navbar*/
     
   }
 
-  .sub__title {
+    .sub__title > a {
       display: flex;
       flex-direction: column;
       align-items: center;
       position: relative;
       bottom: 80px;
-        
-
     }
 
   .nav__toggler { /*essential for removal of mobile layout*/
@@ -274,14 +272,13 @@ for the collapsible effect on mobile navbar*/
 
 
 
-
 /* First component of Staff page */
 
 
 .First__compo { /*First__compo is the blueprint for positioning the main page's heading within the div */
-  background-image: url(/Videos/good-idea1.gif);
+  background-image: url(/Videos/ClubsandCouncilsGif.gif);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 2550px;
   background-position: center, center;
   height: 95vh;
   display: flex;
@@ -600,4 +597,15 @@ for the collapsible effect on mobile navbar*/
 .media__secondary:hover {
   transform: scale(1.2);
   transition: transform .5s;
+}
+
+@media screen and (max-width: 297px){
+  .footer__content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 2rem;
+  }
+
 }
