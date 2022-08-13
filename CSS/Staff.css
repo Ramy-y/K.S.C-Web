@@ -504,12 +504,14 @@ a:hover, a:visited, a {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px groove grey;
+    cursor: pointer;
     
   }
   
   .collapsible__heading {
     margin-top: 0;
     font-size: 4rem;
+    
   }
 
 @media screen and (max-width:525px) {
@@ -546,6 +548,7 @@ a:hover, a:visited, a {
   .collapsible__chevron { /*collapsible drop down menu*/
     transform: rotate(-360deg);
     transition: transform, 0.5s;
+    
     
   }
   
