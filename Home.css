@@ -36,6 +36,7 @@ body {
     overflow: hidden;
     overflow-y: auto;
     
+    
 }
 
 ul {
@@ -505,7 +506,6 @@ a:hover, a:visited, a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -635,12 +635,12 @@ a:hover, a:visited, a {
 
 .News___Control {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .KingCard {
+    
     margin: 1rem;
     width: 250px;
     height: 350px;
@@ -680,37 +680,37 @@ a:hover, a:visited, a {
 
 .card__body {
     position: absolute;
-    height: 38%;
     bottom: 0;   
+    height: 38%;
     padding: 8px;
     background-color: #bfbbd0;
     border-radius: 1rem; 
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     overflow: hidden;
+    text-align: center;
     
 }
 
 .card__title {
     font-size: 1.8rem;
     margin: 0;
-    text-align: center;
+    
     
 
 }
     
 .card__text{
     font-size: 1.5rem;
-    text-align: center;
     flex-grow: 1;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
 .Updates-comp {
-    padding-bottom: 1fr;
+    
     border-bottom: 10px ridge royalblue ;
-
+    
 
 
 }
