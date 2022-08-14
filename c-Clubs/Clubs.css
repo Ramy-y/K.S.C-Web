@@ -435,6 +435,7 @@ for the collapsible effect on mobile navbar*/
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-content: center;
   text-align: center;
   padding: 3.5%;
   border-bottom: 10px groove royalblue ;
