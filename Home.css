@@ -633,8 +633,10 @@ a:hover, a:visited, a {
 
 /* cards of news */
 
+
 .News___Control {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -651,69 +653,70 @@ a:hover, a:visited, a {
 }
 
 .Card1 {
-    background-image: url(/Images/Lion-HeadKSC.png); /*adjust picture of card here*/
+    background-image: url(); /*adjust picture of card here*/
     background-repeat: no-repeat;
     background-position: top;
     background-size: 250px;
-} 
+}
 
 .Card2 {
-    background-image: url(/Images/Lion-HeadKSC.png); /*adjust picture of card here*/
+    background-image: url(); /*adjust picture of card here*/
     background-repeat: no-repeat;
     background-position: top;
     background-size: 250px;
-} 
+}
 
 .Card3 {
-    background-image: url(/Images/Lion-HeadKSC.png); /*adjust picture of card here*/
+    background-image: url(); /*adjust picture of card here*/
     background-repeat: no-repeat;
     background-position: top;
     background-size: 250px;
-} 
+}
 
 .Card4 {
-    background-image: url(/Images/Lion-HeadKSC.png); /*adjust picture of card here*/
+    background-image: url(); /*adjust picture of card here*/
     background-repeat: no-repeat;
     background-position: top;
     background-size: 250px;
-} 
+}
 
 .card__body {
     position: absolute;
-    bottom: 0;   
     height: 38%;
+    bottom: 0;   
     padding: 8px;
     background-color: #bfbbd0;
     border-radius: 1rem; 
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     overflow: hidden;
-    text-align: center;
     
 }
 
 .card__title {
     font-size: 1.8rem;
     margin: 0;
-    
+    text-align: center;
     
 
 }
     
 .card__text{
     font-size: 1.5rem;
+    text-align: center;
     flex-grow: 1;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
 .Updates-comp {
-    
+    padding-bottom: 1fr;
     border-bottom: 10px ridge royalblue ;
-    
+
 
 
 }
+
 
 /* Instagram blog */
 
