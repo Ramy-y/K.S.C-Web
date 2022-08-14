@@ -290,7 +290,7 @@ for the collapsible effect on mobile navbar*/
 .First__compo { /*First__compo is the blueprint for positioning the main page's heading within the div */
   background-image: url(/Videos/ClubsandCouncilsGif.gif);
   background-repeat: no-repeat;
-  background-size: 2550px;
+  background-size: 2500px;
   background-position: center, center;
   background-attachment: fixed;
   height: 100vh;
