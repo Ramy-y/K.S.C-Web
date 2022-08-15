@@ -317,14 +317,6 @@ a:hover, a:visited, a {
 }
 
 @media screen and (min-width:950px) {
-    .First__compo { 
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
 
     .body-content{ /*important! it maintains cosmetic integrity of the page layout */
         width: calc(100vw - 250px);
