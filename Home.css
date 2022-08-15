@@ -307,12 +307,10 @@ a:hover, a:visited, a {
         background-size: cover;
         background-position: center, center;
         background-attachment: none;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-bottom: 10px ridge royalblue;
         
     }
 }
