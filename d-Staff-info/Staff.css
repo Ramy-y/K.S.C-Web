@@ -314,6 +314,7 @@ for the collapsible effect on mobile navbar*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
+    background-attachment: none;
     height: 100vh;
     display: flex;
     flex-direction: column;
