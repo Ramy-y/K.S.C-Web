@@ -302,8 +302,22 @@ for the collapsible effect on mobile navbar*/
     align-items: center;
     border-bottom: 10px ridge royalblue;
     
-    
-    
+ 
+}
+
+@media screen and (max-width: 950px) {
+  .First__compo { /*First__compo is the blueprint for positioning the main page's heading within the div */
+    background-image: url(/Videos/Newtons-Cradle.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px ridge royalblue;
+}
 }
 
 .pride__con {
@@ -322,6 +336,7 @@ for the collapsible effect on mobile navbar*/
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
         
     }
 
