@@ -290,7 +290,6 @@ a:hover, a:visited, a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
-    background-attachment: fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -300,20 +299,7 @@ a:hover, a:visited, a {
     
 }
 
-@media screen and (max-width: 800px) {
-    .First__compo { /*First__compo is the blueprint for positioning the main page's heading within the div */
-      background-image: url(/Videos/podium-lion.gif);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center, center;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-bottom: 10px ridge royalblue;
-  }
-  }
+
 
 .pride__con {
     height: 3.8rem;
