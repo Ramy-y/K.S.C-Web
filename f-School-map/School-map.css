@@ -292,7 +292,6 @@ for the collapsible effect on mobile navbar*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, center;
-  background-attachment: fixed;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -304,21 +303,7 @@ for the collapsible effect on mobile navbar*/
   
 }
 
-@media screen and (max-width: 950px) {
-  .First__compo { /*First__compo is the blueprint for positioning the main page's heading within the div */
-    background-image: url(/Videos/Frog-map.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center, center;
-    background-attachment: none;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 10px ridge royalblue;
-}
-}
+
 
 
 
