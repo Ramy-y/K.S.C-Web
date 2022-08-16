@@ -528,7 +528,7 @@ for the collapsible effect on mobile navbar*/
   .collapsible__header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px groove grey;
+    border-bottom: 2px groove rgb(85, 85, 85);
     cursor: pointer;
     
   }
@@ -608,6 +608,14 @@ for the collapsible effect on mobile navbar*/
     width: calc(var(--icon-width) - 10px);
 }
 
+@media screen and (max-width: 525px) {
+  .teacher-link-solid {
+    height: calc(var(--icon-height) - 20px);
+    width: calc(var(--icon-width) - 20px);
+}
+}
+
+
 .teacher__title {
     font-size: 3.8rem;
     font-weight: 400px;
@@ -633,6 +641,7 @@ for the collapsible effect on mobile navbar*/
     width: var(--icon-width);
     cursor: pointer;
 }
+
 
 .helping-hand-icon {
   

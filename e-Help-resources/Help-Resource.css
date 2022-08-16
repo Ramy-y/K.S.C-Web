@@ -457,11 +457,12 @@ for the collapsible effect on mobile navbar*/
     padding: 3.5%;
     border-bottom: 10px groove royalblue ;
     
+    
 
 }
 
 
-.StaffInfo__title {
+.page__title {
   font-size: 3.8rem;
   margin-bottom: 70px;
   text-align: center;
@@ -588,10 +589,7 @@ for the collapsible effect on mobile navbar*/
 }
 
 
-.Source__name > .Link-for-help {
-    font: inherit;
-    margin-left: 10px;
-}
+
 
 .link-solid {
     height: calc(var(--icon-height) - 10px);
@@ -604,6 +602,55 @@ for the collapsible effect on mobile navbar*/
     text-decoration: underline;
     
 }
+
+@media screen and (max-width: 1024px) {
+  .Resource__title {
+    font-size: 3rem;
+    
+}
+
+.Source__name {
+  font-size: 2.7rem;
+}
+}
+
+
+
+@media screen and (max-width: 408px) {
+  .Resource__title {
+    font-size: 2.4rem;
+    
+}
+
+.Source__name {
+  font-size: 2.3rem;
+}
+
+.link-solid {
+  height: calc(var(--icon-height) - 15px);
+  width: calc(var(--icon-width) - 15px);
+}
+
+}
+
+@media screen and (max-width: 259px) {
+  .Resource__title {
+    font-size: 2rem;
+    
+}
+
+.Source__name {
+  font-size: 1.9rem;
+}
+
+.link-solid {
+  height: calc(var(--icon-height) - 20px);
+  width: calc(var(--icon-width) - 20px);
+}
+
+}
+
+
 
 .Picture-for-help > .PictureHelp {
     width: 300px;
