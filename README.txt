@@ -5,6 +5,12 @@ If you choose to use this code be sure to follow all the comments made in the de
 After making the changes please upload to repository so the website deployer - netlify - can implement the changes to the public
 
 (Must use Git service to connect codes repository to netlify: Github, Gitlab, etc)
+
+Build command: parcel build Home.html
+Publish Directory: dist
+Production branch: Master/Main (whatever you have your repo set to)
+
+
 (recommended to install Nodejs)
 
 ... and thats it!
