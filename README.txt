@@ -4,6 +4,13 @@ If you choose to use this code be sure to follow all the comments made in the de
 
 After making the changes please upload to repository so the website deployer - netlify - can implement the changes to the public
 
+(Must use Git service to connect codes repository to netlify: Github, Gitlab, etc)
+(recommended to install Nodejs)
+
+... and thats it!
+
+
+
 If there are any problems with the code or questions please contact the following
 Phone: Ramy Elagan at (437)-245-8081
 
