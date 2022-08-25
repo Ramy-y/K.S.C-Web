@@ -620,7 +620,12 @@ for the collapsible effect on mobile navbar*/
     font-size: 3.8rem;
     font-weight: 400px;
     text-decoration: underline;
-    
+}
+
+@media screen and (max-width: 415px) {
+  .teacher__title {
+    font-size: 3.0rem;
+  }
 }
 
 .Vice-principals {
