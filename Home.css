@@ -198,6 +198,15 @@ a:hover, a:visited, a {
     
   }
   
+@media screen and (max-height:735px) { /* keeps logo in screen for small-height screens*/
+    .logo {
+        margin-top: 60px;
+        width: 12rem;
+        height: 12rem;
+        
+      }
+}
+
   @media screen and (min-width: 950px) { /*Desktop layout*/
     
     .list__item {
@@ -327,8 +336,15 @@ a:hover, a:visited, a {
 .director {
     height: 50px;
     width: 50px;
-    transform: translateY(140px);
+    transform: translateY(130px);
     fill: #898890;
+}
+
+@media screen and (max-height: 811px) {
+    .director {
+        transform: translateY(65px);
+
+    }
 }
 
 @media screen and (min-width:950px) {
@@ -344,14 +360,14 @@ a:hover, a:visited, a {
 
 @media screen and (max-width: 950px) {
     .director {
-        transform: translateY(190px);
+        transform: translateY(130px);
     }
     
 }
 
 @media screen and (max-width: 697px) {
     .director {
-        transform: translateY(180px);
+        transform: translateY(150px);
     }
     
 }
