@@ -202,7 +202,9 @@ for the collapsible effect on mobile navbar*/
 
 @media screen and (min-width: 950px) { /*Desktop layout*/
   
-  
+  .list__item {
+    font-size: 1.9rem;
+}
 
   .nav {
       position: fixed;
@@ -257,8 +259,8 @@ for the collapsible effect on mobile navbar*/
 
 
   .logo {
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
     
   }
   
@@ -268,7 +270,7 @@ for the collapsible effect on mobile navbar*/
     display: block;
     margin-left: 0rem;
     margin-top: 20px;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-family: "voltaire", Arial, Helvetica, sans-serif;
     text-align: center;
     

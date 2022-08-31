@@ -90,7 +90,6 @@ a:hover, a:visited, a {
 .logo { /*king icon*/
     width: 5.4rem;
     height: 5.4rem;
-    
   }
   
   .nav__heading {
@@ -201,7 +200,9 @@ a:hover, a:visited, a {
   
   @media screen and (min-width: 950px) { /*Desktop layout*/
     
-    
+    .list__item {
+        font-size: 1.9rem;
+    }
 
     .nav {
         position: fixed;
@@ -256,8 +257,8 @@ a:hover, a:visited, a {
   
   
     .logo {
-      width: 14rem;
-      height: 14rem;
+      width: 12rem;
+      height: 12rem;
       
     }
     
@@ -267,7 +268,7 @@ a:hover, a:visited, a {
       display: block;
       margin-left: 0rem;
       margin-top: 20px;
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       font-family: "voltaire", Arial, Helvetica, sans-serif;
       text-align: center;
       
