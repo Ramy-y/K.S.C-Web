@@ -312,8 +312,8 @@ a:hover, a:visited, a {
 
 @media screen and (max-width: 800px) {
     .First__compo { /*First__compo is the blueprint for positioning the main page's heading within the div */
-        background: url(/Videos/podium-lion.gif);
-        background-repeat: no-repeat;
+        
+        
         background-size: cover;
         background-position: center, center;
         background-attachment: none;
