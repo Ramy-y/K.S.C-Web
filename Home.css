@@ -197,8 +197,8 @@ a:hover, a:visited, a {
     transition-duration: 0.8s, 0.8s;
     
   }
-  
-@media screen and (max-height:735px) { /* keeps logo in screen for small-height screens*/
+ 
+@media screen and (max-height:735px) and (min-width: 950px) { /* keeps logo in screen for small-height screens*/
     .logo {
         margin-top: 60px;
         width: 12rem;
