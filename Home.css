@@ -741,7 +741,7 @@ a:hover, a:visited, a {
 
 .card__body {
     position: absolute;
-    height: 38%;
+    height: 38%; /*change height of infopart*/
     bottom: 0;   
     padding: 8px;
     background-color: #bfbbd0;
