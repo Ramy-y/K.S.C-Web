@@ -712,7 +712,7 @@ a:hover, a:visited, a {
 }
 
 .Card1 {
-    background-image: url(); /*adjust picture of card here*/
+    background-image: url(/Images/mandel.jpg); /*adjust picture of card here*/
     background-repeat: no-repeat;
     background-position: top;
     background-size: 250px;
