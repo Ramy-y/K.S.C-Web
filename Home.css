@@ -719,7 +719,7 @@ a:hover, a:visited, a {
 }
 
 .Card2 {
-    background-image: url(); /*adjust picture of card here*/
+    background-image: url(/Images/BSAKaroake.PNG); /*adjust picture of card here*/
     background-repeat: no-repeat;
     background-position: top;
     background-size: 250px;
