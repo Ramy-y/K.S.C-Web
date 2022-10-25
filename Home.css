@@ -706,7 +706,7 @@ a:hover, a:visited, a {
     width: 250px;
     height: 350px;
     border-radius: 1rem;
-    border: 1px solid grey;
+    border: 1px solid black;
     position: relative;
    
 }
@@ -744,7 +744,7 @@ a:hover, a:visited, a {
     height: 38%; /*change height of infopart*/
     bottom: 0;   
     padding: 8px;
-    background-color: #bfbbd0;
+    background-color: #a3b4ff;
     border-radius: 1rem; 
     border-top-right-radius: 0;
     border-top-left-radius: 0;
