@@ -482,17 +482,27 @@ for the collapsible effect on mobile navbar*/
 /* Contact card*/
 
 
+
+
 .card-text > .teacher__email {
     font: var(--inherit);
     color: #cdcbd7;
+    
 }
 
 .card-text > .Instagram-linker {
-  font: var(--inherit);
-    
+    font: var(--inherit);
     color: #cdcbd7;
+    
+    
 } 
 
+@media screen and (max-width: 1049px){ 
+  .TOPGLOOKS{
+    display: none;
+  }
+  
+}
 
 .link-solid {
     width: 30px;
@@ -752,3 +762,4 @@ for the collapsible effect on mobile navbar*/
   }
 
 }
+
