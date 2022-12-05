@@ -302,9 +302,15 @@ for the collapsible effect on mobile navbar*/
 
 /* First component of Staff page */
 
-
+.banner-with-heart
+{
+  fill: rgb(9, 127, 92);
+  height: 10rem;
+  text-align: center;
+  
+}
   .First__compo { /*First__compo is the blueprint for positioning the main page's heading within the div */
-    background-image: url(/Images/CameraPic.webp);
+    background-image: url(/Images/Three-teens.PNG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;

@@ -712,10 +712,11 @@ a:hover, a:visited, a {
 }
 
 .Card1 {
-    background-image: url(/Images/Halloween-KSC.jpg); /*adjust picture of card here*/
+    background-image: url(/Images/Support-form.jpg); /*adjust picture of card here*/
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 270px;
+    background-size: cover;
+    background-position-y: -80px;
 }
 
 .Card2 {
@@ -723,6 +724,7 @@ a:hover, a:visited, a {
     background-repeat: no-repeat;
     background-position: top;
     background-size: 250px;
+    
 }
 
 .Card3 {
@@ -730,6 +732,7 @@ a:hover, a:visited, a {
     background-repeat: no-repeat;
     background-position: top;
     background-size: 250px;
+    
 }
 
 .Card4 {
@@ -737,18 +740,20 @@ a:hover, a:visited, a {
     background-repeat: no-repeat;
     background-position: top;
     background-size: 250px;
+    
 }
 
 .card__body {
     position: absolute;
-    height: 38%; /*change height of infopart*/
+    height: 39%; /*change height of infopart*/
     bottom: 0;   
     padding: 8px;
-    background-color: #8da2ff;
+    background-color: #a4b1ea;
     border-radius: 1rem; 
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     overflow: hidden;
+    border-top: 2px solid black;
     
 }
 
