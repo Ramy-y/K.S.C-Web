@@ -296,7 +296,7 @@ a:hover, a:visited, a {
 
 
 .First__compo { /*First__compo is the blueprint for positioning the main page's heading within the div */
-    background: url(/Videos/podium-lion.gif);
+    background: url(/Images/smile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
@@ -674,7 +674,7 @@ a:hover, a:visited, a {
 }
 
 .Updates__banner {
-    background: url(/Videos/lion-running.gif);
+    background: url(/Images/Pattern.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
@@ -736,10 +736,10 @@ a:hover, a:visited, a {
 }
 
 .Card4 {
-    background-image: url(/Images/Halloween-KSC.jpg); /*adjust picture of card here*/
+    background-image: url(/Images/Support\ MENA.png); /*adjust picture of card here*/
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 250px;
+    background-size: 260px;
     
 }
 
